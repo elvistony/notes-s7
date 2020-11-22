@@ -45,6 +45,7 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix} =
 
 Homogeneous Form:
 
+
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%200%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20%5C%20%5C%20cos%5Ctheta%20%0A%5C%200%20%5C%5C%200%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%200%20%20%5C%20%5C%20%5C%20%5C%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
 P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
 \begin{bmatrix}cos \theta\ -sin\theta \ 0 \\ sin\theta \ \ \ \ cos\theta 
@@ -104,6 +105,7 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
 " /> 
 
 _Homogeneous Form:_
+
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20R_y%20%5C%200%20%5C%200%5C%5C%200%20%5C%20R_x%20%5C%200%20%5C%5C%200%20%5C%20%5C%200%20%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
 P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
 = \begin{bmatrix} R_y \ 0 \ 0\\ 0 \ R_x \ 0 \\ 0 \ \ 0 \ \ 1\end{bmatrix}
