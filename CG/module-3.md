@@ -36,7 +36,7 @@ P' = \begin{bmatrix}x'\\ y'\end{bmatrix}
 T' = \begin{bmatrix}t_x\\ t_y\end{bmatrix}
 " />
 
-Homogeneous Form:
+##### Homogeneous Form:
 
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D1%20%5C%200%20%5C%20t_x%20%5C%5C%200%20%5C%201%20%5C%20t_y%20%5C%5C%200%20%20%5C%200%20%20%5C%20%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
 P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
@@ -65,7 +65,7 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix} =
 . \begin{bmatrix}x\\ y\end{bmatrix} 
 " /> 
 
-Homogeneous Form:
+##### Homogeneous Form:
 
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%200%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20%5C%20%5C%20cos%5Ctheta%20%0A%5C%200%20%5C%5C%200%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%200%20%20%5C%20%5C%20%5C%20%5C%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
 P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
@@ -92,7 +92,7 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
 . \begin{bmatrix}x \\ y\end{bmatrix} 
 " /> 
 
-Homogeneous Form:
+##### Homogeneous Form:
 
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20S_x%20%5C%200%20%5C%200%5C%5C%200%20%5C%20S_y%5C%200%20%5C%5C%200%5C%20%5C%200%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
 P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
@@ -125,7 +125,7 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
 . \begin{bmatrix}x \\ y\end{bmatrix}
 " /> 
 
-_Homogeneous Form:_
+##### Homogeneous Form:
 
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20R_y%20%5C%200%20%5C%200%5C%5C%200%20%5C%20R_x%20%5C%200%20%5C%5C%200%20%5C%20%5C%200%20%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
 P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
@@ -146,7 +146,7 @@ There are two types of shearing:
 
 
 
-_**Shearing (Homogeneous Matrix Form):**_ 
+##### Shearing (Homogeneous Matrix Form):
 
 _X - Shearing_
 
@@ -183,7 +183,7 @@ _Y - Shearing_
 
 ### Cohen Sutherland Line Clipping.
 
-**Concept**
+#### Concept
 
 1. Assign the region code for 2 end points of a given line
 2. If both have region codes `0000` then lines accepted completely.
@@ -197,7 +197,7 @@ _Y - Shearing_
        - Repeat `step 2` until line is trivially accepted or trivially rejected.
 4. Repeat step 1 for other lines.
 
-**Algorithm**
+#### Algorithm
 1. Assign the region code for 2 end points of a given line <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> and <img src="https://i.upmath.me/svg/C_1" alt="C_1" />
 2. If <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> OR <img src="https://i.upmath.me/svg/C_1" alt="C_1" />==`0000` then accept completely.
 3. Else if <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> AND <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> !=`0000` Reject it
