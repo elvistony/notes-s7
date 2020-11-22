@@ -149,3 +149,52 @@ _Y - Shearing_
 = \begin{bmatrix} 1\ Sh_y \ 0 \\0 \ \ 1 \ \ 0 \\  1\ \ 1\ \ 1\end{bmatrix}
 . \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
 " /> 
+
+---
+
+## Window View-port Transformation
+
+<img src="https://i.upmath.me/svg/%5Cbegin%7Btikzpicture%7D%5Bx%3D1cm%2C%20y%3D1cm%2C%20z%3D-0.6cm%5D%0A%20%20%20%20%25%20Axes%0A%20%20%20%20%5Cdraw%20%5B-%2Cdashed%5D%20(0%2C-1)%20--%20(0%2C5)%3B%0A%20%20%20%20%5Cdraw%20%5B-%2Cdashed%5D%20(4%2C-1)%20--%20(4%2C5)%3B%0A%20%20%20%20%5Cdraw%20%5B-%2Cdashed%5D%20(-1%2C0)%20--%20(5%2C0)%3B%0A%20%20%20%20%5Cdraw%20%5B-%2Cdashed%5D%20(-1%2C4)%20--%20(5%2C4)%3B%0A%20%20%20%20%5Cdraw%20(0%2C0)%20--%20(4%2C0)%20--%20(4%2C4)%20--%20(0%2C4)%20--%20(0%2C0)%3B%0A%5Cnode%20%5Bleft%5D%20at%20(4%2C-1)%20%7B%24X_%7Bmax%7D%24%7D%3B%0A%5Cnode%20%5Bleft%5D%20at%20(0%2C-1)%20%7B%24X_%7Bmin%7D%24%7D%3B%0A%5Cnode%20%5Bleft%5D%20at%20(-1%2C4)%20%7B%24Y_%7Bmax%7D%24%7D%3B%0A%5Cnode%20%5Bleft%5D%20at%20(-1%2C0)%20%7B%24Y_%7Bmin%7D%24%7D%3B%0A%5Cend%7Btikzpicture%7D" alt="\begin{tikzpicture}[x=1cm, y=1cm, z=-0.6cm]
+    % Axes
+    \draw [-,dashed] (0,-1) -- (0,5);
+    \draw [-,dashed] (4,-1) -- (4,5);
+    \draw [-,dashed] (-1,0) -- (5,0);
+    \draw [-,dashed] (-1,4) -- (5,4);
+    \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0);
+\node [left] at (4,-1) {$X_{max}$};
+\node [left] at (0,-1) {$X_{min}$};
+\node [left] at (-1,4) {$Y_{max}$};
+\node [left] at (-1,0) {$Y_{min}$};
+\end{tikzpicture}" />
+
+### Cohen Sutherland Line Clipping.
+
+**Concept**
+
+1. Assign the region code for 2 end points of a given line
+2. If both have region codes `0000` then lines accepted completely.
+3. Else
+   - Perform logical AND operation for both region codes
+   - If `result !=0`, `lin` is outside
+   - Else line is partially inside.
+       - Choose an end point of the line that is outside the given rectangle.
+       - Find the intersection point
+       - Replace <img src="https://i.upmath.me/svg/i%5E%7Bth%7D" alt="i^{th}" /> endpoint with the intersection point and update the region code.
+       - Repeat `step 2` until line is trivially accepted or trivially rejected.
+4. Repeat step 1 for other lines.
+
+**Algorithm**
+1. Assign the region code for 2 end points of a given line <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> and <img src="https://i.upmath.me/svg/C_1" alt="C_1" />
+2. If <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> OR <img src="https://i.upmath.me/svg/C_1" alt="C_1" />==`0000` then accept completely.
+3. Else if <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> AND <img src="https://i.upmath.me/svg/C_0" alt="C_0" /> !=`0000` Reject it
+4. Else  
+   - If line crossed <img src="https://i.upmath.me/svg/X_%7Bmin%7D" alt="X_{min}" /> or <img src="https://i.upmath.me/svg/X_%7Bmax%7D" alt="X_{max}" /> , Clip
+      - <img src="https://i.upmath.me/svg/y%20%3D%20y_1%20%2B%20m(x%20-%20x_1)" alt="y = y_1 + m(x - x_1)" />
+   - If line crossed <img src="https://i.upmath.me/svg/Y_%7Bmin%7D" alt="Y_{min}" /> or <img src="https://i.upmath.me/svg/Y_%7Bmax%7D" alt="Y_{max}" /> , Clip
+      - <img src="https://i.upmath.me/svg/x%20%3D%20x_1%20%2B%20%5Cfrac%7B1%7D%7Bm%7D%20(y%20-%20y_1)" alt="x = x_1 + \frac{1}{m} (y - y_1)" />
+   - Verify 
+      - <img src="https://i.upmath.me/svg/x_%7Bmin%7D%20%5Cleq%20x%20%5Cleq%20x_%7Bmax%7D%20" alt="x_{min} \leq x \leq x_{max} " />
+      - <img src="https://i.upmath.me/svg/y_%7Bmin%7D%20%5Cleq%20y%20%5Cleq%20y_%7Bmax%7D%20" alt="y_{min} \leq y \leq y_{max} " />
+   - If it does not satisy, then repeat the clipping process.
+
+---
