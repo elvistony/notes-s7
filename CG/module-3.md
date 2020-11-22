@@ -1,7 +1,21 @@
 # 2D Transformations
-_KTU Module 3 - Part-1_
+_KTU Module 3_
 
 ---
+Syllabus
+---
+
+- Two Dimensional Transformations.
+  - Homogeneous coordinate systems
+  - Matrix Formulation and Concatenation of Transformations.
+- Windowing concepts 
+  - Window to Viewport Transformation
+  - Two Dimensional Line clipping
+    - Cohen Sutherland Line
+    - Midpoint Subdivision Algorithm
+
+---
+
 ### 1.  Translation
 Process of changing the position a straight line path from one coordinate to another.
 
