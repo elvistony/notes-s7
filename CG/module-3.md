@@ -1,5 +1,5 @@
 # 2D Transformations
-_KTU Module 3_
+_KTU Module 3 - Part-1_
 
 ---
 ### 1.  Translation
