@@ -100,9 +100,9 @@ _**Reflection (Matrix Form):**_
 
 <img src="https://i.upmath.me/svg/%20P'%20%3D%20P%20.%20R_%7Bef%7D%20" alt=" P' = P . R_{ef} " />
 
-(Reflextion about X-Axis) <img src="https://i.upmath.me/svg/R_x%3D-1" alt="R_x=-1" /> else <img src="https://i.upmath.me/svg/R_x%3D1" alt="R_x=1" />
+(Reflection about X-Axis) <img src="https://i.upmath.me/svg/R_x%3D-1" alt="R_x=-1" /> else <img src="https://i.upmath.me/svg/R_x%3D1" alt="R_x=1" />
 
-(Reflextion about Y-Axis) <img src="https://i.upmath.me/svg/R_y%3D-1" alt="R_y=-1" /> else <img src="https://i.upmath.me/svg/R_y%3D1" alt="R_y=1" />
+(Reflection about Y-Axis) <img src="https://i.upmath.me/svg/R_y%3D-1" alt="R_y=-1" /> else <img src="https://i.upmath.me/svg/R_y%3D1" alt="R_y=1" />
 
 
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20R_y%20%5C%200%20%5C%5C%200%20%5C%20R_x%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%5Cend%7Bbmatrix%7D%0A" alt="
