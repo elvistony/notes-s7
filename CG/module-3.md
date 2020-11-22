@@ -1,6 +1,7 @@
 # 2D Transformations
 _KTU Module 3_
 
+
 ---
 Syllabus
 ---
@@ -15,7 +16,6 @@ Syllabus
     - Midpoint Subdivision Algorithm
 
 ---
-
 ### 1.  Translation
 Process of changing the position a straight line path from one coordinate to another.
 
@@ -210,5 +210,32 @@ _Y - Shearing_
       - <img src="https://i.upmath.me/svg/x_%7Bmin%7D%20%5Cleq%20x%20%5Cleq%20x_%7Bmax%7D%20" alt="x_{min} \leq x \leq x_{max} " />
       - <img src="https://i.upmath.me/svg/y_%7Bmin%7D%20%5Cleq%20y%20%5Cleq%20y_%7Bmax%7D%20" alt="y_{min} \leq y \leq y_{max} " />
    - If it does not satisy, then repeat the clipping process.
+
+---
+
+### Midpoint Division Algorithm
+
+1. Calculate the position of both endpoints of the line
+2. Perform OR operation on both of these endpoints
+3. If the OR operation gives 0000
+   then
+   - Line is guaranteed to be visible
+   - else
+      - Perform AND operation on both endpoints.
+      - If AND <img src="https://i.upmath.me/svg/%5Cne" alt="\ne" /> `0000`
+          - then the line is Invisible
+      - else (AND=0000)
+          - then the line is Clipped.
+4. For the line to be clipped. Find midpoint
+    - <img src="https://i.upmath.me/svg/X_m" alt="X_m" /> is midpoint of X coordinate.
+    - <img src="https://i.upmath.me/svg/Y_m" alt="Y_m" /> is midpoint of Y coordinate.
+
+<img src="https://i.upmath.me/svg/Xm%3D%20%5Cfrac%7B(x1%2Bx2)%7D%7B2%7D%20" alt="Xm= \frac{(x1+x2)}{2} " />
+
+<img src="https://i.upmath.me/svg/Ym%3D%5Cfrac%7B(y1%2By2)%7D%7B2%7D" alt="Ym=\frac{(y1+y2)}{2}" />
+
+5. Check each midpoint, whether it nearest to the boundary of a window or not.
+6. If the line is totally visible or totally rejected not found then Repeat `step 1 to 5`.
+7. Stop algorithm.
 
 ---
