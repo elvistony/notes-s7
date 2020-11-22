@@ -37,9 +37,19 @@ _**Rotation (Matrix Form):**_
 
 <img src="https://i.upmath.me/svg/%20P'%20%3D%20P%20.%20R%20" alt=" P' = P . R " />
 
-<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%5Cend%7Bbmatrix%7D%20%0A.%20%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20cos%5Ctheta%20%5Cend%7Bbmatrix%7D%0A" alt="
-P'= \begin{bmatrix}x'\\ y'\end{bmatrix} = \begin{bmatrix}x\\ y\end{bmatrix} 
-. \begin{bmatrix}cos \theta\ -sin\theta \\ sin\theta \ \ cos\theta \end{bmatrix}
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20cos%5Ctheta%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%5Cend%7Bbmatrix%7D%20%0A" alt="
+P'= \begin{bmatrix}x'\\ y'\end{bmatrix} = 
+\begin{bmatrix}cos \theta\ -sin\theta \\ sin\theta \ \ cos\theta \end{bmatrix}
+. \begin{bmatrix}x\\ y\end{bmatrix} 
+" /> 
+
+Homogeneous Form:
+
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%200%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20%5C%20%5C%20cos%5Ctheta%20%0A%5C%200%20%5C%5C%200%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%200%20%20%5C%20%5C%20%5C%20%5C%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
+P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
+\begin{bmatrix}cos \theta\ -sin\theta \ 0 \\ sin\theta \ \ \ \ cos\theta 
+\ 0 \\ 0 \ \ \ \ \ \ \ \ \ 0  \ \ \ \ 1 \end{bmatrix}
+. \begin{bmatrix}x\\ y \\ 1\end{bmatrix} 
 " /> 
 
 ---
@@ -60,6 +70,15 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
 . \begin{bmatrix} S_x\ 0 \\ 0\ S_y\end{bmatrix}
 " /> 
 
+Homogeneous Form:
+
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20S_x%20%5C%200%20%5C%200%5C%5C%200%20%5C%20S_y%5C%200%20%5C%5C%200%5C%20%5C%200%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
+P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
+= \begin{bmatrix} S_x \ 0 \ 0\\ 0 \ S_y\ 0 \\ 0\ \ 0\ \ 1\end{bmatrix}
+. \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
+" /> 
+
+
 ---
 
 ### 4.Reflection
@@ -73,13 +92,51 @@ _**Reflection (Matrix Form):**_
 
 <img src="https://i.upmath.me/svg/%20P'%20%3D%20P%20.%20R_%7Bef%7D%20" alt=" P' = P . R_{ef} " />
 
-(Reflextion about X-Axis) <img src="https://i.upmath.me/svg/R_x%3D-1" alt="R_x=-1" />
+(Reflextion about X-Axis) <img src="https://i.upmath.me/svg/R_x%3D-1" alt="R_x=-1" /> else <img src="https://i.upmath.me/svg/R_x%3D1" alt="R_x=1" />
 
-(Reflextion about Y-Axis) <img src="https://i.upmath.me/svg/R_y%3D-1" alt="R_y=-1" />
+(Reflextion about Y-Axis) <img src="https://i.upmath.me/svg/R_y%3D-1" alt="R_y=-1" /> else <img src="https://i.upmath.me/svg/R_y%3D1" alt="R_y=1" />
 
-<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7D%20R_x%20%5C%200%20%5C%5C%200%20%5C%20R_y%20%5Cend%7Bbmatrix%7D%0A" alt="
+
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20R_y%20%5C%200%20%5C%5C%200%20%5C%20R_x%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%5Cend%7Bbmatrix%7D%0A" alt="
 P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
-= \begin{bmatrix}x \\ y\end{bmatrix}
-. \begin{bmatrix} R_x \ 0 \\ 0 \ R_y \end{bmatrix}
+= \begin{bmatrix} R_y \ 0 \\ 0 \ R_x \end{bmatrix}
+. \begin{bmatrix}x \\ y\end{bmatrix}
 " /> 
 
+_Homogeneous Form:_
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%20R_y%20%5C%200%20%5C%200%5C%5C%200%20%5C%20R_x%20%5C%200%20%5C%5C%200%20%5C%20%5C%200%20%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
+P'= \begin{bmatrix}x'\\ y'\end{bmatrix}
+= \begin{bmatrix} R_y \ 0 \ 0\\ 0 \ R_x \ 0 \\ 0 \ \ 0 \ \ 1\end{bmatrix}
+. \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
+" /> 
+
+
+---
+
+### 4.Shearing
+
+Process that distorts the shape of an object.
+
+There are two types of shearing:
+ - X-Shearing
+ - Y-Shearing
+
+
+
+_**Shearing (Homogeneous Matrix Form):**_ 
+
+_X - Shearing_
+
+<img src="https://i.upmath.me/svg/%0A%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%201%20%5C%20%5C%200%20%20%5C%20%5C%200%20%5C%5C%20Sh_x%201%20%5C%200%20%5C%5C%20%201%5C%20%5C%201%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
+\begin{bmatrix}x'\\ y' \\ 1\end{bmatrix}
+= \begin{bmatrix} 1 \ \ 0  \ \ 0 \\ Sh_x 1 \ 0 \\  1\ \ 1\ \ 1\end{bmatrix}
+. \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
+" /> 
+
+_Y - Shearing_
+
+<img src="https://i.upmath.me/svg/%0A%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7D%201%5C%20Sh_y%20%5C%200%20%5C%5C0%20%5C%20%5C%201%20%5C%20%5C%200%20%5C%5C%20%201%5C%20%5C%201%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
+\begin{bmatrix}x'\\ y' \\ 1\end{bmatrix}
+= \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
+. \begin{bmatrix} 1\ Sh_y \ 0 \\0 \ \ 1 \ \ 0 \\  1\ \ 1\ \ 1\end{bmatrix}
+" /> 
