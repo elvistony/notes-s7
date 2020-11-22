@@ -1,1 +1,3 @@
-# notes-s7
+# Notes - Semester 7
+
+Semester 7 Notes.
