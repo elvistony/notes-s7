@@ -22,6 +22,14 @@ P' = \begin{bmatrix}x'\\ y'\end{bmatrix}
 T' = \begin{bmatrix}t_x\\ t_y\end{bmatrix}
 " />
 
+Homogeneous Form:
+
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7D1%20%5C%200%20%5C%20t_x%20%5C%5C%200%20%5C%201%20%5C%20t_y%20%5C%5C%200%20%20%5C%200%20%20%5C%20%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
+P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
+\begin{bmatrix}1 \ 0 \ t_x \\ 0 \ 1 \ t_y \\ 0  \ 0  \  1 \end{bmatrix}
+. \begin{bmatrix}x\\ y \\ 1\end{bmatrix} 
+" /> 
+
 ---
 ### 2.Rotation
 Process of repositioning an object along a circular path in the x-y plane.
@@ -45,7 +53,6 @@ P'= \begin{bmatrix}x'\\ y'\end{bmatrix} =
 
 Homogeneous Form:
 
-
 <img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%20%5Cend%7Bbmatrix%7D%20%3D%20%0A%5Cbegin%7Bbmatrix%7Dcos%20%5Ctheta%5C%20-sin%5Ctheta%20%5C%200%20%5C%5C%20sin%5Ctheta%20%5C%20%5C%20%5C%20%5C%20cos%5Ctheta%20%0A%5C%200%20%5C%5C%200%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%200%20%20%5C%20%5C%20%5C%20%5C%201%20%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%20%0A" alt="
 P'= \begin{bmatrix}x'\\ y' \\ 1 \end{bmatrix} = 
 \begin{bmatrix}cos \theta\ -sin\theta \ 0 \\ sin\theta \ \ \ \ cos\theta 
@@ -65,10 +72,10 @@ _**Scaling (Matrix Form):**_
 
 <img src="https://i.upmath.me/svg/%20P'%20%3D%20P%20.%20S%20" alt=" P' = P . S " />
 
-<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%20%0A%3D%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%5Cend%7Bbmatrix%7D%20%0A.%20%5Cbegin%7Bbmatrix%7D%20S_x%5C%200%20%5C%5C%200%5C%20S_y%5Cend%7Bbmatrix%7D%0A" alt="
+<img src="https://i.upmath.me/svg/%0AP'%3D%20%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%5Cend%7Bbmatrix%7D%20%0A%3D%20%5Cbegin%7Bbmatrix%7D%20S_x%5C%200%20%5C%5C%200%5C%20S_y%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%5Cend%7Bbmatrix%7D%20%0A" alt="
 P'= \begin{bmatrix}x'\\ y'\end{bmatrix} 
-= \begin{bmatrix}x \\ y\end{bmatrix} 
-. \begin{bmatrix} S_x\ 0 \\ 0\ S_y\end{bmatrix}
+= \begin{bmatrix} S_x\ 0 \\ 0\ S_y\end{bmatrix}
+. \begin{bmatrix}x \\ y\end{bmatrix} 
 " /> 
 
 Homogeneous Form:
