@@ -152,7 +152,7 @@ _X - Shearing_
 
 <img src="https://i.upmath.me/svg/%0A%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%201%20%5C%20%5C%200%20%20%5C%20%5C%200%20%5C%5C%20Sh_x%201%20%5C%200%20%5C%5C%20%201%5C%20%5C%201%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
 \begin{bmatrix}x'\\ y' \\ 1\end{bmatrix}
-= \begin{bmatrix} 1 \ \ 0  \ \ 0 \\ Sh_x 1 \ 0 \\  1\ \ 1\ \ 1\end{bmatrix}
+= \begin{bmatrix} 1 \ \ 0  \ \ 0 \\ Sh_x 1 \ 0 \\  0\ \ 0\ \ 1\end{bmatrix}
 . \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
 " /> 
 
@@ -160,7 +160,7 @@ _Y - Shearing_
 
 <img src="https://i.upmath.me/svg/%0A%5Cbegin%7Bbmatrix%7Dx'%5C%5C%20y'%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A%3D%20%5Cbegin%7Bbmatrix%7D%201%5C%20Sh_y%20%5C%200%20%5C%5C0%20%5C%20%5C%201%20%5C%20%5C%200%20%5C%5C%20%201%5C%20%5C%201%5C%20%5C%201%5Cend%7Bbmatrix%7D%0A.%20%5Cbegin%7Bbmatrix%7Dx%20%5C%5C%20y%20%5C%5C%201%5Cend%7Bbmatrix%7D%0A" alt="
 \begin{bmatrix}x'\\ y' \\ 1\end{bmatrix}
-= \begin{bmatrix} 1\ Sh_y \ 0 \\0 \ \ 1 \ \ 0 \\  1\ \ 1\ \ 1\end{bmatrix}
+= \begin{bmatrix} 1\ Sh_y \ 0 \\0 \ \ 1 \ \ 0 \\  0\ \ 0\ \ 1\end{bmatrix}
 . \begin{bmatrix}x \\ y \\ 1\end{bmatrix}
 " /> 
 
